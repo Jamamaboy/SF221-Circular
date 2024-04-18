@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Book Tracking</title>
+</head>
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+<style>
+
+	* {
+		color: black;
+		font-family: Imprima;
+		text-decoration: none;
+	}
+
+	body{
+		margin: 0px;
+		height: 692px;
+		max-width: 365px;
+		background-color: white;
+	}
+
+	.Font.Main {
+		color: #C3002F;
+		font-size: 40px;
+		padding-left: 25px;
+		padding-top: 42px;
+		margin: 0px;
+	}
+
+	.Font.mini {
+		color: black;
+		font-size: 30px;
+		padding-left: 25px;
+		margin: 0px;
+	}
+
+	form {
+		padding-left: 13px;
+	}
+
+	.search {
+		background-color: rgba(243, 243, 243, 1);
+		border: none;
+		padding: 12px;
+		padding-left: 19px;
+		padding-right: 160px;
+		border-radius: 20px;
+	}
+
+	form button img{
+		width: 20px;
+	}
+
+	form button {
+		border: none;
+		height: 40px;
+		width: 40px;
+		border-radius: 50px;
+		background-color: rgba(254, 186, 0, 1);
+	}
+
+	.tabManu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+		margin-left: 13px;
+		margin-top: 11px;
+
+	}
+
+	.tabManu button{
+		background-color: rgba(243, 243, 243, 1);
+		border-radius: 50px;
+		width: 109px;
+		height: 26px;
+		border: none;
+	}
+
+	.Font.Book-Booking {
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.Font.My-Booking {
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.Font.Book-Tracking {
+		background-color: #FFDFAE;
+	}
+
+
+	.tabManu .Font{
+		font-size:13px;
+	}
+
+
+
+	.Bast-Selling-Books {
+		margin-top: 15px;
+		margin-left: 14px;
+		margin-right: 14px;
+		width: 100%;
+	}
+
+	.Bast-Selling-Books .Font {
+		font-size: 20px;
+		padding-left: 5px;
+	}
+
+	.card-container {
+		margin-top: 100px;
+	}
+
+	.Content3cor {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.Content3cor .card{
+		height: 165px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	.card-content {
+		height: 48px;
+	}
+	.Content3cor .card img{
+		width: 100%;
+		height: 120px;
+	}
+
+	.card .font1{
+		margin-top: 5px;
+		margin-left: 9px;
+		font-size: 12px;
+	}
+
+	.card .font2{
+		font-size: 10px;
+		margin-left: 9px;
+
+	}
+
+</style>
+<body>
+	<div class="Font Main">Book📕本</div>
+	<div class="Font mini">สถานะการจัดส่ง</div>
+	<form>
+		<input type="text" class="Font search" placeholder="Search for book">
+		<button type="submit"><img class="VectorSearch"src="/Feature/Libary/Pic/BookBooking/Popup/Vector.svg"></button>
+	</form>
+	<div class="tabManu">
+		<a href="/Feature/Libary/Book Booking.html"><button class="Font Book-Booking">Book Booking</button></a>
+		<a href="/Feature/Libary/My Booking.html"><button class="Font My-Booking">My Booking</button></a>
+		<a href="/Feature/Libary/Book Tracking.html"><button class="Font Book-Tracking">Book Tracking</button></a>
+	</div>
+
+	<div class="Bast-Selling-Books">
+		<div class="Content3cor">
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/เมษาลาตะวัน.jpg">
+					<div class="card-content">
+						<div class="font1">Card</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/9780441172719.JPG">
+					<div class="card-content">
+						<div class="font1">DUNE</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+
+
+
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/Sapiens.jpg">
+					<div class="card-content">
+						<div class="font1">Sapiens</div>
+						<div class="font2">: A Brief History</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/civil_war.webp">
+					<div class="card-content">
+						<div class="font1">CIVIL</div>
+						<div class="font2">MOIVE</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/เมษาลาตะวัน.jpg">
+					<div class="card-content">
+						<div class="font1">Card</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/3e8dc020-6210-11ee-93d4-c9bd8c045b03_webp_original.webp">
+					<div class="card-content">
+						<div class="font1">April</div>
+						<div class="font2">MOIVE</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/9781526657886.jpg">
+					<div class="card-content">
+						<div class="font1">Poorthing</div>
+						<div class="font2">MOIVE</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/1000269529_front_XXL.jpg">
+					<div class="card-content">
+						<div class="font1">🫧ในสวนลับ</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/1000246894_front_XXL.jpg">
+					<div class="card-content">
+						<div class="font1">มุมมองนักอ่านพระเจ้า 1</div>
+						<!-- <div class="font2">MOIVE</div> -->
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/9786168166475l.jpg">
+					<div class="card-content">
+						<div class="font1">เมษาลาตะวัน</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/เมษาลาตะวัน.jpg">
+					<div class="card-content">
+						<div class="font1">Card</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/3e8dc020-6210-11ee-93d4-c9bd8c045b03_webp_original.webp">
+					<div class="card-content">
+						<div class="font1">April</div>
+						<div class="font2">MOIVE</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/9781526657886.jpg">
+					<div class="card-content">
+						<div class="font1">Poorthing</div>
+						<div class="font2">MOIVE</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/1000269529_front_XXL.jpg">
+					<div class="card-content">
+						<div class="font1">🫧ในสวนลับ</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/1000246894_front_XXL.jpg">
+					<div class="card-content">
+						<div class="font1">มุมมองนักอ่านพระเจ้า 1</div>
+						<!-- <div class="font2">MOIVE</div> -->
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="#" class="btn">
+					<img src="/Feature/Libary/Pic/9786168166475l.jpg">
+					<div class="card-content">
+						<div class="font1">เมษาลาตะวัน</div>
+						<div class="font2">Light Novel</div>
+					</div>
+				</a>
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+</body>
+</html>

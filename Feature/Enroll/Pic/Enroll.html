@@ -3,8 +3,10 @@
 <head>
 	<title>Enroll</title>
 </head>
+	<!-- ฟอนต์แบบ Imprima -->
 	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
 <style>
+
 
 	body{
 		margin: 0px;
@@ -12,52 +14,41 @@
 		max-width: 365px;
 		background-color: white;
 	}
-
-	.block{
-		width: 390px;
-		height: 10px;
-		background-color: #C3002F;
-	}
-
 	.Font {
 		font-family: Imprima;
 	}
 
+
+	/* Main */
 	.Font.Main {
 		color: #C3002F;
 		font-size: 40px;
 		padding-left: 25px;
 		padding-top: 42px;
 		margin: 0px;
-		font-weight: ;
 	}
-
 	.Font.mini {
 		color: black;
 		font-size: 30px;
 		padding-left: 25px;
 		margin: 0px;
 	}
-
 	.Name-Profile {
 		margin-top: 9px;
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 	}
-
 	.Name-Profile img{
 		height: 60px;
 		width: 60px;
 		padding-left: 30px;
 	}
-
 	.Name-Profile .number {
 		margin-left: 2px;
 		font-size: 18px;
 		text-align: left;
 		color: rgba(49, 49, 49, 1);
 	}
-
 	.Name-Profile .name {
 		margin-left: 2px;
 		margin-top: 8px;
@@ -65,58 +56,98 @@
 		text-align: left;
 		color: rgba(49, 49, 49, 1);
 	}
-
 	.Font.Update {
 		margin-left: 40px;
 		font-size: 12px;
 		color:rgba(49, 49, 49, 1);
 	}
 
+
+
+	/* bar */
 	.tabManu {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/* text-align: center; */
-		/* align-items: center; */
-		background-color: rgba(243, 243, 243, 1);
 		border-radius: 50px;
-		/* width: 100%; */
 		margin-left: 25px;
 		margin-top: 11px;
 	}
-
 	.tabManu .one{
 		background-color: rgba(255, 223, 174, 1);
-		border-radius: 50px;
-		/* width: 109px; */
+		border-radius: 20px;
+		margin-right: 5px;
 		height: 26px;
 		border: none;
 	}
-
 	.tabManu .two{
 		background-color: rgba(243, 243, 243, 1);
 		border-radius: 50px;
-		/* width: 109px; */
+		margin-left: 5px;
 		height: 26px;
 		border: none;
 	}
 
+
+
+	
 	.Plan {
 		margin: 25px;
 		margin-left: 0px;
 	}
-
 	.card {
-		height: 144px;
+		/* height: 144px; */
 		margin-bottom: 20px;
 		margin-left: 25px;
+		padding-left: 5px;
+		padding-top: 15px;
+		padding-bottom: 10px;
 		width: 100%;
 		background-color: rgba(243, 243, 243, 1);
 	}
-
 	.card .content{
 		display: grid;
 		grid-template-columns: 24fr 10fr 4fr;
+		margin-bottom: 5px;
 	}
+	.card .content1{
+		/* display: grid; */
+		/* grid-template-columns: 2fr 8fr; */
+		display: flex;
+		align-items: center;
+	}
+	.Font.kit0{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.Font.kit1{
+		font-size: 15px;
+		font-weight:bold;
+	}
+	.Font.kit2{
+		margin-left: 8px;
+		font-size: 14px;
+		color: rgba(179, 178, 183, 1);
+	}
+	.Font.kit3{
+		font-size: 14px;
+	}
+	.contentCard + .contentCard{
+		margin-top:  11px;
+		border-top: 1px solid rgba(179, 178, 183, 1);
+		width: 320px;
+	}
+	.contentCard{
+		padding-bottom: 2px;
+		padding-top: 5px;
+	}
+
+
+	.block{
+		width: 390px;
+		height: 10px;
+		background-color: #C3002F;
+	}
+
 
 </style>
 <body>
@@ -132,30 +163,122 @@
 		</div>
 	</div>
 	<div class="Font Update">อัพเดตล่าสุด ปป/ดด/วว ชช:นน</div>
+
 	<div class="tabManu">
 		<button class="Font one">ตารางเรียนที่เลือก</button>
 		<button class="Font two">ตารางที่ร่าง</button>
 	</div>
 
 	<div class="Plan">
+
 		<div class="card">
 			<div class="content">
-				<div class="Font">Plan1</div>
-				<div class="kit Font">6 หน่วยกิต</div>
+				<div class="Font kit0">Plan1</div>
+				<div class="kit Font">18 หน่วยกิต</div>
 				<div class="Heart">💛</div>
 			</div>
-			<div>CN101</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">JP171</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">JAPANESE FOR BEGINNERS 1</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">SF231</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">DATA STRUTURES AND ALGORITHMS</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN311</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">OPERATING SYSTEMS</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN321</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">DATA COMMUNICATION AND COMPUTER NETWORK1</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN221</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">SOFTWARE ENGINEERING MODELS AND ANALYSIS</div>
+			</div>
 		</div>
+
 		<div class="card">
 			<div class="content">
-				<div class="Font">Plan1</div>
-				<div class="kit Font">6 หน่วยกิต</div>
+				<div class="Font kit0">Plan2</div>
+				<div class="kit Font">9 หน่วยกิต</div>
 				<div class="Heart">💛</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="content">
+				<div class="Font kit0">Plan3</div>
+				<div class="kit Font">9 หน่วยกิต</div>
+				<div class="Heart">💛</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
+			</div>
+			<div class="contentCard">
+				<div class="content1">
+					<div class="Font kit1">CN101</div>
+					<div class="Font kit2">3หน่วยกิต (3 หน่วยกิต ลงทะเบียน)</div>
+				</div>
+				<div class="Font kit3">Introduction to Computer Progamming 101</div>
 			</div>
 		</div>
 
 	</div>
-
-
 </body>
 </html>
