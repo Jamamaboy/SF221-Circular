@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Complain Form</title>
+</head>
+	<!-- ฟอนต์แบบ Imprima -->
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+<style>
+
+
+	body{
+		margin: 0px;
+		height: 692px;
+		max-width: 365px;
+		background-color: white;
+	}
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	.Font {
+		font-family: Imprima;
+		font-size: 13px;
+	}
+
+
+	/* Main */
+	.Font.Main {
+		color: #C3002F;
+		font-size: 40px;
+		padding-left: 25px;
+		padding-top: 42px;
+		margin: 0px;
+	}
+	.Font.mini {
+		color: black;
+		font-size: 30px;
+		padding-left: 25px;
+		margin: 0px;
+	}
+
+
+
+	.tabManu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 317px;
+		margin-left: 25px;
+		margin-top: 11px;
+		border-radius: 50px;
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.tabManu button{
+		background-color: rgba(243, 243, 243, 1);
+		border-radius: 50px;
+		width: 160px;
+		height: 26px;
+		border: none;
+	}
+	.Font.Complain-Form {
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.Font.Complain-Status {
+		background-color: #FFDFAE;
+	}
+	.tabManu .Font{
+		font-size:13px;
+	}
+
+	.Status {
+		display: flex;
+		flex-direction: column;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.Status .card {
+		display: flex;
+		flex-direction: column;
+		height: 100px;
+		border-radius: 20px;
+		background: #F6F6F6;
+		flex-shrink: 0;
+		box-sizing: border-box;
+
+	}
+	.card {
+		position: relative;
+	}
+	.card .topic {
+		position: absolute;
+		box-sizing: border-box;
+		top: 10%;
+		left: 5%;
+	}
+	.card .status {
+		position: absolute;
+		box-sizing: border-box;
+		bottom: 0%;
+		right: 0%;
+		border-radius: 20px;
+		flex-shrink: 0;
+		padding: 5px;
+		padding-bottom: 8px;
+		margin: 10px;
+	}
+	.card .status.waitingReceive {
+		background: #FDCCC5;
+	}
+	.card .status.in-process {
+		background: #FDF1C5;
+	}
+	.card .status.succeed {
+		background: rgb(217, 255, 160);
+	}
+
+
+	.card + .card {
+		margin-top: 25px;
+	}
+
+
+
+
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
+	}
+
+
+</style>
+<body>
+	<div class="block"></div>
+	<div class="block"></div>
+
+	<div class="Font Main">Complain Status📑</div>
+	<div class="Font mini">สถานะร้องเรียน</div>
+
+	<div class="tabManu">
+		<a href="/Feature/Complain/Complain-Form.html"><button class="Font Complain-Form">ฟอร์มรับเรื่อง</button></a>
+		<a href="/Feature/Complain/Complain-Status.html"><button class="Font Complain-Status">สถานะการร้องเรียน</button></a>
+	</div>
+
+	<div class="Status">
+
+		<div class="card">
+			<div class="Font topic">
+				อาคารอำนวยการคณะวิศวะห้อง ว.ศ.511 ชำรุจ
+			</div>
+			<div class="Font status in-process">
+				อยู่ระหว่างดำเนินการ
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="Font topic">
+				แอป giggy ไม่เสถียนอีกแล้ว
+			</div>
+			<div class="Font status waitingReceive">
+				รอรับเรื่อง
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="Font topic">
+				แอป giggy ไม่เสถียน
+			</div>
+			<div class="Font status succeed">
+				ดำเนินการสำเร็จ
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

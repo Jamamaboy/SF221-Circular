@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Complain Form</title>
+</head>
+	<!-- ฟอนต์แบบ Imprima -->
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+<style>
+
+
+	body{
+		margin: 0px;
+		height: 692px;
+		max-width: 365px;
+		background-color: white;
+	}
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	.Font {
+		font-family: Imprima;
+	}
+
+
+	/* Main */
+	.Font.Main {
+		color: #C3002F;
+		font-size: 40px;
+		padding-left: 25px;
+		padding-top: 42px;
+		margin: 0px;
+	}
+	.Font.mini {
+		color: black;
+		font-size: 30px;
+		padding-left: 25px;
+		margin: 0px;
+	}
+
+
+
+	.tabManu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 317px;
+		margin-left: 25px;
+		margin-top: 11px;
+		border-radius: 50px;
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.tabManu button{
+		background-color: rgba(243, 243, 243, 1);
+		border-radius: 50px;
+		width: 160px;
+		height: 26px;
+		border: none;
+	}
+	.Font.Complain-Form {
+		background-color: #FFDFAE;
+	}
+	.Font.Complain-Status {
+		background-color: rgba(243, 243, 243, 1);
+	}
+	.tabManu .Font{
+		font-size:13px;
+	}
+
+
+
+	.topic {
+		display: flex;
+		margin-left: 22px;
+	}
+	.topic input {
+		margin-top: 20px;
+		margin-left: 4px;
+		height: 40px;
+		background: #F3F3F3;
+		border: none;
+	}
+	.topic .topicFrom{
+		width: 180px;
+	}
+	.topic .toFrom{
+		width: 122px;
+	}
+
+
+	.Time {
+		margin-top: 5px;
+		margin-left: 25px;
+		display: flex;
+		width: 320px;
+		height: 40px;
+	}
+	.Time input{
+		background: #F3F3F3;
+		border: none;
+		margin-right: 5px;
+	}
+	.Time .month{
+		width: 130px;
+	}
+	.Time .time{
+		width: 200px;
+	}
+
+	.FontFrom{
+		margin-top: 5px;
+		margin-left: 25px;
+		width: 310px;
+		height: 300px;
+		background: #F3F3F3;
+		border: none;
+	}
+
+
+	input::placeholder {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+
+
+
+	.summit {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.summit button {
+		margin-top: 28px;
+		background-color: #FFDFAE;
+		border-radius: 20px;
+		border: none;
+		width: 125px;
+		height: 26px;
+		justify-content: center;
+		align-items: center;
+		font-size: 13px;
+	}
+
+
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
+	}
+
+
+</style>
+<body>
+	<div class="block"></div>
+	<div class="block"></div>
+
+	<div class="Font Main">Complain Form📑</div>
+	<div class="Font mini">ฟอร์มรับเรื่องร้องเรียน</div>
+
+	<div class="tabManu">
+		<a href="/Feature/Complain/Complain-Form.html"><button class="Font Complain-Form">ฟอร์มรับเรื่อง</button></a>
+		<a href="/Feature/Complain/Complain-Status.html"><button class="Font Complain-Status">สถานะการร้องเรียน</button></a>
+	</div>
+
+	<form>
+		<div class="topic">
+			<input type="text" class="topicFrom" placeholder="หัวข้อเรื่อง">
+			<input type="text" class="toFrom" placeholder="แจ้งถึง">
+		</div>
+		<div class="Time">
+			<input class="month" type="month" placeholder="วันที่เกิด">
+			<input class="time" type="time" placeholder="เวลาที่เกิด">
+		</div>
+		<input type="text" class="FontFrom" placeholder="แจ้งร้องเรียน">
+	</form>
+
+	<div class="summit">
+		<button>ส่งเรื่อง</button>
+	</div>
+</body>
+</html>
