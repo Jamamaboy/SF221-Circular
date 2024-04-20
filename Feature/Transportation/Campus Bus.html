@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Campus Bus</title>
+</head>
+	<!-- ฟอนต์แบบ Imprima -->
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+<style>
+
+
+	body{
+		margin: 0px;
+		height: 692px;
+		width: 365px;
+		background-color: white;
+	}
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	.Font {
+		font-family: Imprima;
+	}
+
+
+	/* Main */
+	.Font.Main {
+		color: #C3002F;
+		font-size: 40px;
+		padding-left: 25px;
+		padding-top: 42px;
+		margin: 0px;
+	}
+	.Font.mini {
+		color: black;
+		font-size: 30px;
+		padding-left: 25px;
+		margin: 0px;
+	}
+
+	.content {
+
+		width: 365px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content img{
+		margin-top: 10px;
+		width: 317px;
+		height: 538px;
+		flex-shrink: 0;
+	}
+
+
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
+	}
+
+
+</style>
+<body>
+	<!-- <div class="block"></div>
+	<div class="block"></div> -->
+
+	<div class="Font Main">Campus Bus 🚌</div>
+	<div class="Font mini">รถมหาวิทยาลัย</div>
+	<div class="content">
+		<img src="/Feature/Transportation/Pic/image 22.png">
+	</div>
+
+</body>
+</html>

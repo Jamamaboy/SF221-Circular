@@ -12,6 +12,9 @@
 		text-decoration: none;
 	}
 
+	body::-webkit-scrollbar {
+		display: none;
+	}
 	body{
 		margin: 0px;
 		height: 692px;
@@ -50,7 +53,6 @@
 	form button img{
 		width: 20px;
 	}
-
 	form button {
 		border: none;
 		height: 40px;
@@ -59,6 +61,7 @@
 		background-color: rgba(254, 186, 0, 1);
 	}
 
+
 	.tabManu {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -66,7 +69,6 @@
 		margin-left: 13px;
 		margin-top: 11px;
 	}
-
 	.tabManu button{
 		background-color: rgba(243, 243, 243, 1);
 		border-radius: 50px;
@@ -74,19 +76,15 @@
 		height: 26px;
 		border: none;
 	}
-
 	.Font.Book-Booking {
 		background-color: #FFDFAE;
-
 	}
 	.Font.My-Booking {
 		background-color: rgba(243, 243, 243, 1);
-
 	}
 	.Font.Book-Tracking {
 		background-color: rgba(243, 243, 243, 1);
 	}
-
 	.tabManu .Font{
 		font-size:13px;
 	}
@@ -102,7 +100,11 @@
 		padding-bottom: 29px;
 		width: 342px;
 		background-color:  rgba(254, 186, 0, 1);
-		overflow: hidden;
+		overflow-x: auto;
+	}
+
+	.Recommended-Books::-webkit-scrollbar {
+		display: none;
 	}
 
 	.Recommended-Books .Font {
@@ -113,14 +115,15 @@
 		font-weight: 400;
 		line-height: 24.67px;
 		letter-spacing: 0.40px;
+		position: absolute
 	}
 
 	.Content1row {
 		display: flex;
-		margin-top: 10px;
 		margin-left: 14px;
+		margin-top: 50px;
+		margin-right: 14px;
 		width: max-content;
-		overflow-x: scroll;
 		overflow-y: hidden;
 	}
 
@@ -129,9 +132,7 @@
 		height: 160px;
 		width: 115px;
 		border-radius: 20px;
-		overflow-x: auto;
 		margin-right: 5px;
-		flex: 0 0 auto;
 	}
 
 	.Content1row .card img{
@@ -198,8 +199,23 @@
 
 	}
 
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
+	}
+
+
 </style>
 <body>
+	<div class="block"></div>
+	<div class="block"></div>
+
 
 	<div class="Font Main">Book📕本</div>
 	<div class="Font mini">ยืมหนังสือ</div>
@@ -236,7 +252,7 @@
 
 			<div class="card">
 				<a href="#">
-					<img src="/Feature/Libary/Pic/1000246894_front_XXL.jpg">
+					<img src="/Feature/Libary/Pic/3e8dc020-6210-11ee-93d4-c9bd8c045b03_webp_original.webp">
 				</a>
 			</div>
 

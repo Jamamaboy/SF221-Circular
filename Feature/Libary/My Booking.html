@@ -12,6 +12,9 @@
 		text-decoration: none;
 	}
 
+	body::-webkit-scrollbar {
+		display: none;
+	}
 	body{
 		margin: 0px;
 		height: 692px;
@@ -147,10 +150,24 @@
 		margin-left: 9px;
 
 	}
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
+	}
+
 
 </style>
 <body>
-	<div class="	Font Main">Book📕本</div>
+	<div class="block"></div>
+	<div class="block"></div>
+
+	<div class="Font Main">Book📕本</div>
 	<div class="Font mini">หนังสือของฉัน</div>
 	<form>
 		<input type="text" class="Font search" placeholder="Search for book">
