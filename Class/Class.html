@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>class</title>
+</head>
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- forn -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+	<!-- forn -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<!-- forn -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	body {
+		margin: 0px;
+		height: 844px;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		height: 100px;
+		background-color: white;
+		/* background-color:#F37500; */
+		position: fixed;
+		top: 0%;
+	}
+	.header1 {
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+	.header1 .Day{
+		font-size: 15px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 20px;
+	}
+	.header1 .Main {
+		font-size: 30px;
+		font-family: "Homenaje", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 35px;
+		font-family: "Outfit", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 900;
+		font-style: normal;
+	}
+	.header2 {
+		position: relative;
+	}
+	.header2 .Font{
+		position: absolute;
+		bottom: 21%;
+		right: 20%;
+		background-color: rgb(217, 217, 217);
+		padding: 0 10px;
+		border-radius: 20px;
+		font-size: 17px;
+		font-family: "Homenaje", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 23px;
+	}
+
+	main {
+		margin: 120px auto;
+		padding: 0 20px;
+		padding-top: 10px;
+		padding-bottom: 110px;
+	}
+
+	 .conatiner{
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(140px,2fr));
+	}
+
+	.box{
+		justify-self: center;
+		width: 170px;
+		height: 180px;
+		border-radius: 20px;
+		background-color: #FAFAFA;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+	}
+	.box .topbox {
+		height: 20px;
+		width: 100%;
+		background-color: rgb(39, 39, 39);
+	}
+	.box .mainbox {
+		margin-top: 5%;
+		margin-left: 5%;
+		padding-left: 4%;
+	}
+	.box .mainbox .course {
+		font-family: "Homenaje", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: #070F2B;
+		font-size: 40px;
+	}
+	.box .mainbox .course-name{
+		font-family: "Homenaje", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 35px;
+	}
+	.box .mainbox .course-section{
+		font-family: "Homenaje", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 20px;
+	}
+
+
+
+	.box .mainbox.no1{
+		border-left: solid #F37500 5px;
+	}
+	.box .mainbox.no2{
+		border-left: solid #d4019f 5px;
+	}
+	.box .mainbox.no3{
+		border-left: solid #0071c7 5px;
+	}
+	.box .mainbox.no4{
+		border-left: solid #30ca02 5px;
+	}
+	.box .mainbox.no5{
+		border-left: solid #e7f300 5px;
+	}
+	.box .mainbox.no6{
+		border-left: solid #f30000 5px;
+	}
+
+	.Bardown {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		text-align: center;
+		align-items: center;
+		width: 100%;
+		height: 100px;
+		background-color: rgb(244, 244, 244);
+		position: fixed;
+		box-sizing: border-box;
+		bottom: 0%;
+	}
+	.Font{
+		color: black;
+		bottom: 0px;
+		font-family: Imprima;
+		text-decoration: none;
+	}
+	.Bardown img {
+		height: 48px;
+		width: 48px;
+	}
+
+</style>
+<body>
+	<div class="block"></div>
+	<div class="block"></div>
+
+	<header>
+		<div class="header1">
+			<div class="Font Day">2 MAY 2024</div>
+			<div class="Font Main">CLASS</div>
+		</div>
+		<div class="header2">
+			<div class="Font"> 2/2023</div>
+		</div>
+	</header>
+
+	<main class="conatiner">
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no1">
+				<div class="course">CN311</div>
+				<div class="course-name">OPERATING SYSEMS</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no2">
+				<div class="course">CN321</div>
+				<div class="course-name">DATA COMMUN ..</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no3">
+				<div class="course">JP171</div>
+				<div class="course-name">JAPANESE FOR BEGI ..</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no4">
+				<div class="course">SF221</div>
+				<div class="course-name">SOFTWARE PORCESS</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no5">
+				<div class="course">SF222</div>
+				<div class="course-name">SOFTWARE ENGINEER...</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="topbox"></div>
+
+			<div class="mainbox no6">
+				<div class="course">S231</div>
+				<div class="course-name">DATA STRUCTURES</div>
+				<div class="course-section">SECTION 760001</div>
+			</div>
+		</div>
+
+
+
+
+	</main>
+
+	<footer class="Bardown">
+		<a class="News Font" href="/News/News.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/Home/Pic/News.svg">
+			<div class="Font"> News</div>
+		</a>
+
+		<a class="Class Font" href="/Class/Class.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/Class/Pic/book.svg">
+			<div class="Font" style="color: #F37500;">Class</div>
+		</a>
+
+		<a class="!NAME! Font" href="/Profile/Profile.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/Home/Pic/Picture.svg">
+			<div class="Font">Profile</div>
+		</a>
+
+		<a class="Notive Font" href="/Notice/Notice.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;"src="/Home/Pic/Notice.svg">
+			<div class="Font">Notice</div>
+		</a>
+	</footer>
+
+</body>
+</html>
