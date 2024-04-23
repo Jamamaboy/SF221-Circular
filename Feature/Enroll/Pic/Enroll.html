@@ -14,6 +14,9 @@
 		max-width: 365px;
 		background-color: white;
 	}
+	body::-webkit-scrollbar {
+		display: none;
+	}
 	.Font {
 		font-family: Imprima;
 	}
@@ -88,14 +91,12 @@
 	}
 
 
-
-	
+	/* Plan */
 	.Plan {
 		margin: 25px;
 		margin-left: 0px;
 	}
 	.card {
-		/* height: 144px; */
 		margin-bottom: 20px;
 		margin-left: 25px;
 		padding-left: 5px;
@@ -110,8 +111,6 @@
 		margin-bottom: 5px;
 	}
 	.card .content1{
-		/* display: grid; */
-		/* grid-template-columns: 2fr 8fr; */
 		display: flex;
 		align-items: center;
 	}
@@ -141,16 +140,21 @@
 		padding-top: 5px;
 	}
 
-
 	.block{
-		width: 390px;
+		width: 365px;
 		height: 10px;
 		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
+	}
+	.block + .block{
+		bottom: 0%;
 	}
 
 
 </style>
 <body>
+	<div class="block"></div>
 	<div class="block"></div>
 
 	<div class="Font Main">Enroll</div>

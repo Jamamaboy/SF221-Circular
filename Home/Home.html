@@ -8,15 +8,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
 <style>
 
-
+body::-webkit-scrollbar {
+	display: none;
+}
 	body {
-			margin: 0px;
-			height: 844px;
-			width: 390px;
-			background: linear-gradient(191deg, #F00 3.47%, #FFD12F 98.84%);
-			background-repeat: repeat-x;
-		}
-
+		margin: 0px;
+		height: 844px;
+		width: 390px;
+		background: linear-gradient(191deg, #F00 3.47%, #FFD12F 98.84%);
+		background-repeat: repeat-x;
+		overflow: hidden;
+	}
 	header .Font{
 		text-align: center;
 		color: white;
@@ -39,27 +41,31 @@
 		box-sizing: border-box;
 		bottom: 0%;
 	}
-
 	.Font{
 		color: black;
 		bottom: 0px;
 		font-family: Imprima;
 		text-decoration: none;
 	}
-
-
 	.Bardown img {
 		height: 48px;
 		width: 48px;
 	}
-
-	.block {
-		height: 4px;
-		width: 390px;
-		background-color:aliceblue;
+	.block{
+		width: 365px;
+		height: 10px;
+		background-color: #C3002F;
+		opacity: 0.3;
+		position: fixed;
 	}
+	.block + .block{
+		bottom: 0%;
+	}
+
+
 </style>
 <body>
+	<div class="block"></div>
 	<div class="block"></div>
 	<header>
 		<div class="Font">Putthipong Soongsuwan</div>
@@ -67,26 +73,25 @@
 	</header>
 
 	<footer class="Bardown">
-			<a class="News Font" href="#">
-				<img src="/Home/Pic/News.svg">
-				<div class="Font"> News</div>
-			</a>
+		<a class="News Font" href="#">
+			<img src="/Home/Pic/News.svg">
+			<div class="Font"> News</div>
+		</a>
 
+		<a class="Class Font" href="#">
+			<img src="/Home/Pic/Class.svg">
+			<div class="Font">Class</div>
+		</a>
 
-			<a class="Class Font" href="#">
-				<img src="/Home/Pic/Class.svg">
-				<div class="Font">Class</div>
-			</a>
+		<a class="!NAME! Font" href="#">
+			<img src="/Home/Pic/Picture.svg">
+			<div class="Font">Profile</div>
+		</a>
 
-			<a class="!NAME! Font" href="#">
-				<img src="/Home/Pic/Picture.svg">
-				<div class="Font">Profile</div>
-			</a>
-
-			<a class="Notive Font" href="#">
-				<img src="/Home/Pic/Notice.svg">
-				<div class="Font">Notice</div>
-			</a>
+		<a class="Notive Font" href="#">
+			<img src="/Home/Pic/Notice.svg">
+			<div class="Font">Notice</div>
+		</a>
 
 	</footer>
 

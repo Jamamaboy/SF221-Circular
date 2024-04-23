@@ -6,79 +6,70 @@
 <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
 <style>
 
-body {
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	body {
 		margin: 0px;
 		height: 844px;
-		/* width: 390px; */
+		width: 390px;
 	}
 
-header .Font{
-	text-align: center;
-	color: white;
-	font-size: 15px;
-}
+	.Bardown {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		text-align: center;
+		align-items: center;
+		width: 100%;
+		height: 100px;
+		background-color: rgb(244, 244, 244);
+		position: fixed;
+		box-sizing: border-box;
+		bottom: 0%;
+	}
 
-header {
-	padding-top: 40px;
-}
+	.Font{
+		color: black;
+		bottom: 0px;
+		font-family: Imprima;
+		text-decoration: none;
+	}
 
-.Bardown {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	text-align: center;
-	align-items: center;
-	width: 100%;
-	height: 100px;
-	background-color: rgb(227, 227, 227);
-	position: fixed;
-	box-sizing: border-box;
-	bottom: 0%;
-}
+	.Bardown img {
+		height: 48px;
+		width: 48px;
+	}
 
-.Font{
-	color: black;
-	bottom: 0px;
-	font-family: Imprima;
-	text-decoration: none;
-}
-
-
-.Bardown img {
-	height: 48px;
-	width: 48px;
-}
-
-img {
-	width: 100%;
-}
+	img {
+		width: 100%;
+		height: auto;
+	}
 
 
 </style>
 <body>
 	<img src="/News/Pic/image 6.png">
+
 	<footer class="Bardown">
-		<a class="News Font" href="#">
-			<img src="/Home/Pic/News.svg">
-			<div class="Font"> News</div>
+		<a class="News Font" href="/News/News.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/News/Pic/News.svg">
+			<div class="Font" style="color: #F37500;"> News</div>
 		</a>
 
-
-		<a class="Class Font" href="#">
-			<img src="/Home/Pic/Class.svg">
+		<a class="Class Font" href="/Class/Class.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/Home/Pic/Class.svg">
 			<div class="Font">Class</div>
 		</a>
 
-		<a class="!NAME! Font" href="#">
-			<img src="/Home/Pic/Picture.svg">
+		<a class="!NAME! Font" href="/Profile/Profile.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;" src="/Home/Pic/Picture.svg">
 			<div class="Font">Profile</div>
 		</a>
 
-		<a class="Notive Font" href="#">
-			<img src="/Home/Pic/Notice.svg">
+		<a class="Notive Font" href="/Notice/Notice.html">
+			<img style="background-color: white; padding: 10px; border-radius: 20px;"src="/Home/Pic/Notice.svg">
 			<div class="Font">Notice</div>
 		</a>
-
-
 	</footer>
 
 </body>
