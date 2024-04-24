@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Public Bus</title>
+</head>
+	<!-- ฟอนต์แบบ Imprima -->
+	<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+<style>
+
+	html {
+		::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+	body{
+		margin: 0px;
+		height: 692px;
+		max-width: 365px;
+		background-color: white;
+
+		.Font {
+			font-family: Imprima;
+			font-family: "Imprima", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+
+	header {
+
+		.Font.Main {
+			color: #C3002F;
+			font-size: 40px;
+			padding-left: 25px;
+			padding-top: 42px;
+			margin: 0px;
+		}
+		.Font.mini {
+			color: black;
+			font-size: 30px;
+			padding-left: 25px;
+			margin: 0px;
+		}
+	}
+
+	Nav {
+		.warpper {
+			margin: 0px 20px;
+
+			.tabManu {
+				display: grid;
+				margin-top: 11px;
+			}
+
+			.Campus {
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 10px;
+
+				button{
+					background-color: rgba(243, 243, 243, 1);
+					border-radius: 10px;
+					width: 100px;
+					height: 50px;
+					border: none;
+					box-shadow: 1px 1px 1px 1px #919191;
+				}
+				.Font.Rangsit {
+					background-color: #FFDFAE;
+				}
+				.Font.Tha-Prahanm {
+					background-color: rgba(243, 243, 243, 1);
+				}
+				.Font.Lampang {
+					background-color: rgba(243, 243, 243, 1);
+				}
+				.Font{
+					font-size:15px;
+				}
+			}
+
+			.location {
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 7px;
+				margin-top: 10px;
+				padding-left: 13px;
+				padding-right: 13px;
+
+				button{
+					background-color: #F3F3F3;
+					border-radius: 10px;
+					width: 100%;
+					height: 50px;
+					border: none;
+					box-shadow: -0.2px -0.2px 2px #888888;
+				}
+				.Font.Puey {
+					background-color: #ffef95;
+					box-shadow: 1px 1px 2px #888888;
+					font-size: 12px;
+				}
+				.Font.SKR {
+					font-size: 9px;
+				}
+				.Font.Co-Learning {
+				}
+				.Font.Multimedia {
+					font-size: 11px;
+				}
+				.Font.Nongyao-Chaiseri {
+					font-size: 11px;
+				}
+				.Font.Seat-Reservation {
+					font-size: 11px;
+				}
+				.Font {
+					font-size: 10px;
+				}
+			}
+
+		}
+	}
+
+	main {
+		margin-top: 20px;
+		padding-bottom: 100px;
+		.warpper {
+			margin: 0px 8px;
+			background-color: #EAECF3;
+			padding: 2px 2px;
+
+			.card{
+				border: solid #ffffff 1px;
+				border-radius: 1px;
+				display: grid;
+				grid-template-rows: 1fr 1fr;
+				height: 110px;
+				background-color: white;
+
+				.top{
+					background-color: #ffffff;
+					display: grid;
+					grid-template-columns: 1fr 10fr;
+					align-items: center;
+
+
+					img {
+						height: 50px;
+						justify-self: center;
+					}
+
+					.content {
+						padding-left: 2px;
+						display: flex;
+						.Name-Room {
+							align-self: center;
+							font-size: 15px;
+							font-weight: 900px;
+							margin-bottom: 2px;
+						}
+
+						content {
+								display: flex;
+								align-items: center;
+
+								img{
+									height: 10px;
+								}
+								.Font {
+									font-size: 10px;
+									margin-left: 5px;
+
+								}
+
+								+ content {
+									margin-left: 10px;
+								}
+						}
+
+						.period {
+							margin-top: 4px;
+							display: flex;
+
+							button {
+								background: #e06169;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								border: none;
+								margin-right: 3px;
+								border-radius: 2px;
+								padding: 3px 3px;
+
+								img {
+									height: 10px;
+									margin-right: 2px;
+								}
+
+								.Font {
+									font-size: 9px;
+									color: white;
+								}
+							}
+							.NOT {
+								background: #e06169;
+							}
+							.OPEN {
+								background: #45d84c;
+							}
+							.CLOSED {
+								background: #bfbfbf;
+							}
+						}
+					}
+				}
+				.down{
+					margin-top: 6px;
+					padding: 0px 10px;
+					border-top: solid #888888 0.5px;
+					padding-top: 8px;
+					.content {
+						display: flex;
+						gap: 20px;
+						.in-of {
+							display: flex;
+							align-items: center;
+							img {
+								height: 10px;
+							}
+							.Font {
+								margin-left: 5px;
+								font-size: 7px;
+							}
+							.Font.Num {
+								color: #d84a45;
+								padding: 2.5px;
+								background-color: #ffdcfa;
+								border-radius: 5px;
+								font-size: 8.3px;
+							}
+						}
+					}
+				}
+				+ .card {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+
+</style>
+<body>
+
+	<header>
+		<div class="Font Main">Study Room 🛌</div>
+		<div class="Font mini">จองห้องติว</div>
+	</header>
+
+	<Nav>
+		<div class="warpper">
+			<div class="tabManu Campus">
+				<a href="#"><button class="Font Rangsit"><div>Rangsit </div><div>Campus</div></button></a>
+				<a href="#"><button class="Font Tha-Prahanm"><div>Tha Prahanm</div><div>Campus</div></button></a>
+				<a href="#"><button class="Font Lampang"><div>Lampang</div><div>Campus</div></button></a>
+			</div>
+			<div class="tabManu location">
+				<a href="#"><button class="Font Puey"><div>Puey</div><div>Ungpakorn</div></button></a>
+				<a href="#"><button class="Font SKR"><div>ศูนย์การเรียนรู้กรมหลวงนราธิวาสราชนครินทร์</div></button></a>
+				<a href="#"><button class="Font Co-Learning"><div>Co-Learning</div><div>Puey Ungphakorn</div></button></a>
+				<a href="#"><button class="Font Multimedia"><div>Multimedia</div><div>Lab</div></button></a>
+				<a href="#"><button class="Font Nongyao-Chaiseri"><div>Nongyao Chaiseri</div><div>Libary</div></button></a>
+				<a href="#"><button class="Font Seat-Reservation"><div>จองที่นั่ง</div><div>หอสมุดป๋วย</div></button></a>
+			</div>
+		</div>
+	</Nav>
+
+	<main>
+		<div class="warpper">
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 1</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 2</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 3</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 4</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 5</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="card">
+				<div class="top">
+
+					<img src="/Feature/Room/Pic/22859676_1546793292034000_3255067045339523456_o.jpg">
+
+					<div class="content">
+						<div class="Font Name-Room">Study Room 6</div>
+						<div class="at">
+							<content>
+								<img src="/Feature/Room/Pic/marker.svg">
+								<div class="Font">Rangsit Campus</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/home.svg">
+								<div class="Font">Puey Ungpakorn Libary</div>
+							</content>
+							<content>
+								<img src="/Feature/Room/Pic/Floot.svg">
+								<div class="Font">Fl.1</div>
+							</content>
+						</div>
+						<div class="period">
+							<button class="OPEN">
+								<div class="Font">09:00 - 12:00</div> </button>
+							<button class="NOT">
+								<div class="Font">12:00 - 15:00</div> </button>
+							<button class="NOT">
+								<div class="Font">15:00 - 18:00</div> </button>
+							<button class="Not">
+								<div class="Font">18:00 - 21:00</div> </button>
+							<button class="CLOSED">
+								<div class="Font">CLOSED</div> </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="down">
+					<div class="content">
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/Frame.svg">
+							<div class="Font">TV<div>Standard</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/marker.svg">
+							<div class="Font">Marker<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/cable.svg">
+							<div class="Font">HDMI<div>Libary of things</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/wifi.svg">
+							<div class="Font">WIFI<div>Support</div></div>
+						</div>
+						<div class="in-of">
+							<img src="/Feature/Room/Pic/people.svg">
+							<div class="Num Font">6-16</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+				<!-- warpper -->
+			</div>
+
+
+		</div>
+	</main>
+</body>
+</html>
